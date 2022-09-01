@@ -1,0 +1,38 @@
+.finance {
+  letter-spacing: 1px;
+  margin-bottom: $mainPadTop;
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/finance-img.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    .finance__title {
+      color: #363640;
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 70px;
+
+      @media screen and (max-width: 575px) {
+        text-align: center;
+      }
+    }
+
+    &__desc {
+      color: #363640;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 30px;
+
+      p:first-child {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

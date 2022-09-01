@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 14.83 24">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #4f3cfd;
+      }
+
+      .cls-1 {
+        clip-rule: evenodd;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Path_1" data-name="Path 1" class="cls-1" d="M.17,21.92l9.17-9.17L.17,3.58,3,.75l12,12-12,12Z"/>
+    </clipPath>
+  </defs>
+  <g id="slider-arrow-2" transform="translate(-0.17 -0.75)">
+    <g id="Group_1" data-name="Group 1" class="cls-2">
+      <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-3" width="24.83" height="34" transform="translate(-4.83 -4.25)"/>
+    </g>
+  </g>
+</svg>

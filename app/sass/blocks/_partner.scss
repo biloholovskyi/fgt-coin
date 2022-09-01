@@ -1,0 +1,96 @@
+.partner {
+  padding: $mainPadTop 0;
+  background-image: url(../img/partner-fon.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    color: #363640;
+    font-size: $titleSize;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 95px;
+  }
+
+  &__slider {
+    height: 100px;
+    width: 100%;
+    position: relative;
+
+    .item {
+      background-image: url(../img/slider-3.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      transition: all .3s;
+      background-color: transparent;
+
+
+      &:hover {
+        cursor: pointer;
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+        transition: all .3s;
+      }
+    }
+
+    .slick-list,
+    .slick-track {
+      height: 100%;
+    }
+
+    .slick-arrow {
+      height: 20px;
+      width: 10px;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      margin-top: -10px;
+      background-image: url(../img/slider-arrow-2.svg);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      color: transparent;
+      border: none;
+      filter: brightness(0);
+      transition: filter .3s;
+
+      &:hover {
+        cursor: pointer;
+        filter: brightness(100%);
+        transition: filter .3s;
+        
+      }
+    }
+
+    .slick-prev {
+      left: -110px;
+      transform: rotate(180deg);
+
+      @media screen and (max-width: 991px) {
+        left: -40px;
+      } 
+
+      @media screen and (max-width: 767px) {
+        left: 0;
+      }
+    }
+
+    .slick-next {
+      right: -110px;
+      
+      @media screen and (max-width: 991px) {
+        right: -40px;
+      }
+
+      @media screen and (max-width: 767px) {
+        right: 0;
+      }
+    }
+  }
+}

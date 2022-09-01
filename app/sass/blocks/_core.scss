@@ -1,0 +1,101 @@
+.core {
+  padding: $mainPadTop 0;
+  background-color: #363640;
+
+  &__title {
+    font-size: $titleSize;
+    font-weight: 700;
+    text-align: center;
+    color: $whiteColor;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+  }
+
+  &__img {
+    background-image: url(../img/blockchain.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: -30px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__text {
+    p {
+      color: #9A9A9F;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+      margin-bottom: 30px;
+      &:last-child{margin-bottom: 0;}
+
+      span {
+        font-weight: 500;
+        color: #C9C9CB;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 75px;
+
+    &__title {
+      color: $whiteColor;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 60px;
+    }
+
+    .core__item {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 50px;
+      }
+
+      .img {
+        height: 50px;
+        width: 45px;
+        margin: 0 auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .document{background-image: url(../img/document.svg);}
+      .build{background-image: url(../img/build.svg);}
+      .heart{background-image: url(../img/heart.svg);}
+      .pages{background-image: url(../img/pages.svg);}
+      
+      .text {
+        font-weight: 300;
+        font-size: 12px;
+        text-align: center;
+        color: #9A9A9F;
+        line-height: 16px;
+        margin-top: 25px;
+        padding: 0 20px;
+      }
+    }
+
+    &__desc {
+      margin-top: 50px;
+      font-size: 14px;
+      font-weight: 300;
+      color: #9A9A9F;
+      line-height: 24px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 0;
+      }
+
+      span {
+        font-weight: 500;
+        color: $whiteColor;
+      }
+    }
+  }
+}

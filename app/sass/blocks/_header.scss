@@ -1,0 +1,199 @@
+.header {
+  padding: 35px 15px;
+  padding-bottom: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: #363640;
+  background-image: url(../img/header-fon.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  max-height: 91px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--lang {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .header__logo {
+      background-image: url(../img/logo.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 30px;
+      width: 85px;
+
+      @media screen and (max-width: 1199px) {
+        margin-right: 30px;
+      }
+    }
+
+    .header__social {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
+
+      .item {
+        height: 25px;
+        width: 25px;
+        background-color: #717178;
+        border-radius: 50%;
+        margin-right: 25px;
+        &:last-child {margin-right: 0;}
+        transition: all .5s;
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-color: $hoverColor;
+          transition: all .5s;
+        }
+
+        a {
+          display: block;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .telegram {background-image: url(../img/telegram.svg);}
+      .whatsap {background-image: url(../img/whatsap.svg);}
+      .twitter {background-image: url(../img/twitter.svg);}
+      .youtube {background-image: url(../img/youtube.svg);}
+      .instagram {background-image: url(../img/instagram.svg);}
+    }
+
+    .header__whitepaper {
+      margin-left: 50px;
+
+      @media screen and (max-width: 767px) {
+        margin-left: 0px;
+      }
+
+      @media screen and (max-width: 575px) {
+        display: none;
+      }
+
+      a {
+        font-weight: 500;
+        color: $whiteColor;
+        font-size: 12px;
+
+        &:hover {
+          color: $hoverColor;
+          transition: all .5s;
+        }
+      }
+    }
+
+    .header__nav {
+      margin-left: 70px;
+
+      @media screen and (max-width: 1199px) {
+        margin-left: 30px;
+      }
+
+      @media screen and (max-width: 575px) {
+        display: none;
+      }
+      
+      .header__nav__link {
+        margin-right: 45px;
+        &:last-child {margin-right: 0;}
+        text-transform: uppercase;
+        color: $whiteColor;
+        font-size: 12px;
+        font-weight: 500;
+
+        @media screen and (max-width: 767px) {
+          display: block;
+          margin-right: 0;
+          margin-bottom: 5px;
+          text-align: right;
+        }
+
+        &:hover {
+          color: $hoverColor;
+          transition: all .5s;
+        }
+      }
+    }
+
+    .header__lang {
+      min-height: 49px;
+      margin-top: -8px;
+      
+      &__wrapper {
+        color: $whiteColor;
+        padding: 15px 20px;
+        background-color: #363540;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.25);
+
+          .ru {
+            span {
+              filter: none;
+              transition: all .5s;
+              transform: rotate(180deg);
+            }
+          }
+
+          .eng {
+            display: block;
+            margin-top: 20px;
+            transition: all .5s;
+          }
+        }
+
+        .ru {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          span {
+            display: block;
+            height: 5px;
+            width: 10px;
+            background-image: url(../img/lang-span.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 10px;
+            filter: brightness(0) invert(1);
+            transition: all .5s;
+          }
+        }
+
+        .eng {
+          display: none;
+        }
+
+        .ru,
+        .eng {
+          transition: all .5s;
+
+          &:hover {
+            color: $hoverColor;
+            transition: all .5s;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

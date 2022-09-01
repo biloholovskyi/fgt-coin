@@ -1,0 +1,115 @@
+.scope {
+  padding: $mainPadTop 0;
+  padding-bottom: 50px;
+  background-color: #FAFAFA;
+  background-image: url(../img/scope-fon.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__title {
+    text-align: center;
+    font-size: $titleSize;
+    font-weight: 700;
+    color: #363640;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+  }
+
+  &__item {
+    color: #363640;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    height: 150px;
+    width: 360px;
+    padding: 0 50px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 991px) {
+      width: 260px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .item-1 {
+    background-image: url(../img/scope-1.png);
+
+     &::after {
+      content: '1';
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: -30px;
+      font-size: 120px;
+      opacity: .2;
+      color: #363640;
+      font-weight: 700;
+      z-index: 1;
+    }
+  }
+
+  .item-2 {
+    background-image: url(../img/scope-2.png);
+
+     &::after {
+      content: '2';
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: -30px;
+      font-size: 120px;
+      opacity: .2;
+      color: #363640;
+      font-weight: 700;
+      z-index: 1;
+    }
+  }
+
+  .item-3 {
+    background-image: url(../img/scope-3.png);
+
+     &::after {
+      content: '3';
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: -30px;
+      font-size: 120px;
+      opacity: .2;
+      color: #363640;
+      font-weight: 700;
+      z-index: 1;
+    }
+  }
+
+  .item-4 {
+    background-image: url(../img/scope-4.png);
+
+     &::after {
+      content: '4';
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: -30px;
+      font-size: 120px;
+      opacity: .2;
+      color: #363640;
+      font-weight: 700;
+      z-index: 1;
+    }
+  }
+}

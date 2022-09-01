@@ -1,0 +1,109 @@
+.token-sort {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  letter-spacing: 1px;
+  overflow: hidden;
+
+  &__text {
+    .token-sort__title {
+      color: #363640;
+      font-size: $titleSize;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 70px;
+
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+    }
+
+    .token-sort__list {
+      margin-bottom: 50px;
+
+      p {
+        color: #363640;
+        font-size: 14px;
+        line-height: 30px;
+        position: relative;
+
+        .decor {
+          width: 6px;
+          min-width: 6px;
+          min-height: 6px;
+          display: block;
+          height: 6px;
+          position: absolute;
+          left: 0;
+          top: 11.5px;
+        }
+
+        .percent {
+          font-weight: 500;
+          margin-right: 6px;
+          margin-left: 20px;
+        }
+
+        .text {
+          font-weight: 300;
+        }
+
+        &:nth-child(1) {
+          .decor {background-color: #6AF97D;}
+        }
+
+        &:nth-child(2) {
+          .decor {background-color: #4835FB;}
+        }
+
+        &:nth-child(3) {
+          .decor {background-color: #0BDAD9;}
+        }
+
+        &:nth-child(4) {
+          .decor {background-color: #AFF6BC;}
+        }
+
+        &:nth-child(5) {
+          .decor {background-color: #1681D1;}
+        }
+      }
+    }
+
+    .token-sort__price {
+      p {
+        color: #363640;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 30px;
+
+        .name {
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #4835fb;
+        }
+
+        .price {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 406px;
+    margin-left: -70px;
+    height: 435px;
+    background-image: url(../img/token-sort-img.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}

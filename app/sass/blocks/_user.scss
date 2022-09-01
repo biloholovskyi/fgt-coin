@@ -1,0 +1,72 @@
+.user {
+  padding: $mainPadTop 0;
+
+  &__title {
+    font-size: $titleSize;
+    color: #363640;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  &__row {
+    margin-bottom: 40px;
+    display: none;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
+
+    &--visible {
+      display: block;
+    }
+
+    .user__item {
+      height: 155px;
+      width: 100%;
+      background-color: #FBFBFB;
+      border-radius: 5px;
+      box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.1);
+      background-image: url(../img/user-1.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60%;
+      filter: grayscale(100%);
+      transition: all .3s;
+
+      @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+        background-size: 30%;
+      }
+
+      &:hover {
+        cursor: pointer;
+        transition: all .3s;
+        filter: none;
+      }
+    }
+  }  
+
+  &__button {
+    color: $whiteColor;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.25);
+    width: 255px;
+    height: 50px;
+    background-color: #C2C2C5;
+    transition: all .3s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $hoverColor;
+      transition: all .3s;
+    }
+  }
+}

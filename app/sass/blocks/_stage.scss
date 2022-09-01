@@ -1,0 +1,104 @@
+.stage {
+  padding-top: $mainPadTop;
+  height: 751px;
+
+  @media screen and (max-width: 991px) {
+    height: auto;
+  }
+
+  &__title {
+    font-size: $titleSize;
+    color: #363640;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  &__item {
+    border-radius: 5px;
+    box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.1);
+    padding: 0 50px;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    text-align: center;
+    transition: all .3s;
+    position: relative;
+
+    @media screen and (max-width: 991px) {
+      margin-bottom: 50px;
+    }
+
+    &:hover {
+      transition: all .3s;
+      padding-bottom: 120px;
+      margin-top: -25px;
+      cursor: pointer;
+      transition: all .3s;
+      background-color: #4935fe;
+      
+      .item__title {
+        color: $whiteColor;
+        transition: all .3s;
+      }
+
+      .item__text {
+        color: $whiteColor;
+        transition: all .3s;
+      }
+
+      .item__button {
+        display: block;
+      }
+    }
+
+    .item__title {
+      color: #363640;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      transition: all .3s;
+    }
+
+    .item__text {
+      color: #363640;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      &:last-child{margin-bottom: 0;}
+      transition: all .3s;
+    }
+
+    .item__button {
+      margin-top: 10px;
+      border: none;
+      text-transform: uppercase;
+      color: $whiteColor;
+      font-weight: 500;
+      font-size: 12px;
+      border-radius: 40px;
+      background-color: rgba(250, 250, 250, .3);
+      box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.25);
+      width: 270px;
+      height: 50px;
+      transition: all .3s;
+      display: none;
+      position: absolute;
+      bottom: 70px;
+      left: 50px;
+
+      @media screen and (max-width: 991px) {
+        left: 50%;
+        margin-left: -135px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: $hoverColor;
+        transition: all .3s;
+      }
+    }
+  }
+}

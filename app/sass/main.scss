@@ -1,0 +1,42 @@
+@import 'vars';
+@import './blocks/header-wrapper';
+@import './blocks/header';
+@import './blocks/home';
+@import './blocks/why-ico';
+@import './blocks/core';
+@import './blocks/scope';
+@import './blocks/stage';
+@import './blocks/token';
+@import './blocks/backpay';
+@import './blocks/token-desc';
+@import './blocks/token-sort';
+@import './blocks/finance';
+@import './blocks/map';
+@import './blocks/team';
+@import './blocks/partner';
+@import './blocks/consult';
+@import './blocks/user';
+@import './blocks/smi';
+@import './blocks/footer';
+@import './blocks/modal-window';
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: 'Montserrat';
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  color: #fff;
+  text-decoration: none;
+  transition: color .5s;
+}
+
+section,
+footer {
+  overflow: hidden;
+}

@@ -1,0 +1,109 @@
+.team {
+  padding: $mainPadTop 0;
+
+  &__title {
+    color: #363640;
+    font-size: $titleSize;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+  }
+
+  &__item {
+    width: 100%;
+    margin-bottom: 70px;
+
+    .photo {
+      width: 100%;
+      height: 260px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+
+    .name,
+    .job {
+      text-align: center;
+      color: #363640;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .job {
+      font-weight: 300;
+      margin: 20px 0;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+
+      &__link {
+        width: 25px;
+        height: 25px;
+        display: block;
+        background-color: #717178;
+        border-radius: 50%;
+        transition: all .5s;
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 25px;
+        &:last-child {margin-right: 0;}
+
+        &:hover {
+          background-color: #83f797;
+          transition: all .5s;
+        }
+      }
+
+      .telegram {background-image: url(../img/telegram.svg);}
+      .whatsap {background-image: url(../img/whatsap.svg);}
+      .mail {background-image: url(../img/mail.svg);}
+    }
+
+    &--new {
+      .photo {
+        background-color: #FAFAFA;
+        background-image: url(../img/team-new.svg);
+        background-size: 40%;
+        margin-bottom: 50px;
+      }
+
+      .team-new__button {
+        color: $whiteColor;
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+        background-color: rgba(54, 54, 64, .3);
+        box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.13);
+        width: 255px;
+        height: 50px;
+        border: none;
+        border-radius: 40px;
+        transition: all .3s;
+
+        @media screen and (max-width: 1199px) {
+          width: 100%;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: $hoverColor;
+          transition: all .3s;
+        }
+      }
+    }
+  }
+
+  .creater {.photo{background-image: url(../img/team-1.png);}}
+  .seo {.photo{background-image: url(../img/team-2.png);}}
+  .tech {.photo{background-image: url(../img/team-3.png);}}
+  .comercial {.photo{background-image: url(../img/team-4.png);}}
+  .pr {.photo{background-image: url(../img/team-5.png);}}
+  .marketing {.photo{background-image: url(../img/team-6.png);}}
+  .manager {.photo{background-image: url(../img/team-7.png);}}
+}

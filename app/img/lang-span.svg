@@ -1,0 +1,23 @@
+<svg id="lang-span" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 10 5">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #83f797;
+      }
+
+      .cls-1 {
+        clip-rule: evenodd;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Path_1" data-name="Path 1" class="cls-1" d="M0,0,5,5l5-5Z"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1" data-name="Group 1" class="cls-2">
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-3" width="20" height="15" transform="translate(-5 -5)"/>
+  </g>
+</svg>

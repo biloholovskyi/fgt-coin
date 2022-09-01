@@ -1,0 +1,31 @@
+.token {
+  padding: $mainPadTop 0;
+  text-align: center;
+  background-color: #363640;
+  background-image: url(../img/token-fon.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__title {
+    font-size: $titleSize;
+    font-weight: 700;
+    color: $whiteColor;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ACACB0;
+    margin-bottom: 35px;
+    &:last-child{margin-bottom: 0;}
+
+    span {
+      font-weight: 500;
+      color: #E9E9EA;
+    }
+  }
+}

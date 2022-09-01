@@ -1,0 +1,61 @@
+.consult {
+  padding-top: $mainPadTop;
+  padding-bottom: 120px;
+  background-color: #363640;
+
+  &__title {
+    font-size: $titleSize;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: $whiteColor;
+    margin-bottom: 135px;
+  }
+
+  &__imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+    }
+
+    .item {
+      margin: 0 45px;
+      width: 260px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+
+      @media screen and (max-width: 575px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .img {
+        background-image: url(../img/consult-img.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 50%;
+        width: 50%;
+        // filter: brightness(0) invert(1);
+        transition: all .5s;
+      }
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 15px 40px 10px rgba(0, 0, 0, 0.1);
+        transition: all .5s;
+        transform: scale(1.2);
+
+        .img {
+          // filter: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+.map {
+  background-color: #363640;
+  padding: $mainPadTop 0;
+
+  &__title {
+    font-size: $titleSize;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $whiteColor;
+    margin-bottom: 70px;
+  }
+
+  &__row {
+    width: 100%;
+    padding: 0 100px;
+    position: relative;
+    margin-bottom: 95px;
+    &:last-child {margin-bottom: 70px;}
+
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
+
+    @media screen and (max-width: 575px) {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      background-color: #5D5D65;
+      height: 1px;
+      left: 0;
+      margin-top: -15.5px;
+      top: 50%;
+      z-index: 1;
+
+      @media screen and (max-width: 575px) {
+        display: none;
+      }
+    }
+
+    &__body {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      @media screen and (max-width: 575px) {
+        flex-wrap: wrap;
+      }
+
+      .item {
+        width: 100%;
+
+        @media screen and (max-width: 575px) {
+          margin-bottom: 40px;
+        }
+
+        .date {
+          font-weight: 500;
+          color: #C1C1C3;
+          font-size: 14px;
+          text-align: center;
+
+          @media screen and (max-width: 991px) {
+            min-height: 36px;
+          }
+
+          @media screen and (max-width: 575px) {
+            min-height: auto;
+          }
+        }
+
+        .text {
+          font-weight: 300;
+          color: #88888D;
+          font-size: 12px;
+          text-align: center;
+          line-height: 16px;
+        }
+
+        .dot {
+          border-radius: 50%;
+          background-color: rgb(250, 250, 250);
+          box-shadow: 0px 0px 8.64px 0.36px rgba(250, 250, 250, 0.9);
+          width: 10px;
+          height: 10px;
+          margin: 20px auto;
+          position: relative;
+          z-index: 5;
+        }
+
+        &--current {
+          .text,
+          .date {
+            color: $hoverColor;
+            text-transform: uppercase;
+          }
+
+          .dot {
+            background-color: $hoverColor;
+          }
+        }
+      }
+    }
+
+    &--2 {
+      &::after {
+        margin-top: -31px;
+
+        @media screen and (max-width: 1199px) {
+          margin-top: -39px;
+        }
+
+        @media screen and (max-width: 991px) {
+          margin-top: -45px;
+        }
+
+        @media screen and (max-width: 575px) {
+          display: none;
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 212px;
+        right: -3px;
+        top: -168px;
+        z-index: 1;
+        border-right: 1px solid #5D5D65;
+        border-top: 1px solid #5D5D65;
+        border-bottom: 1px solid #5D5D65;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+
+        @media screen and (max-width: 991px) {
+          top: -185px;
+          height: 248px;
+        }
+
+        @media screen and (max-width: 575px) {
+          display: none;
+        }
+      }
+
+    }
+
+    &--3 {
+      &::after {
+        margin-top: -23.5px;
+
+        @media screen and (max-width: 1199px) {
+          margin-top: -31.5px;
+        }
+
+        @media screen and (max-width: 991px) {
+          margin-top: -38.5px;
+        }
+
+        @media screen and (max-width: 575px) {
+          display: none;
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 244px;
+        left: -3px;
+        top: -200px;
+        z-index: 1;
+        border-left: 1px solid #5D5D65;
+        border-top: 1px solid #5D5D65;
+        border-bottom: 1px solid #5D5D65;
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 6px;
+
+        @media screen and (max-width: 1199px) {
+          height: 260px;
+          top: -216px;
+        }
+
+        @media screen and (max-width: 991px) {
+          height: 309px;
+          top: -247px;
+        }
+
+        @media screen and (max-width: 575px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__button {
+    background-color: $hoverColor;
+    border: none;
+    border-radius: 40px;
+    width: 270px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    color: #363640;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .3s;
+
+    &:hover {
+      transition: all .3s;
+      cursor: pointer;
+      color: #D8D8DA;
+      background-color: #717178;
+    }
+  }
+}
